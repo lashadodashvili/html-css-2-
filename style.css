@@ -12,10 +12,10 @@ body {
 header {
     display: flex;
     width: 80%;
-    border: 2px solid red;
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
+    padding: 40px 0px 55px 0px;
 
 }
 
@@ -36,6 +36,16 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #6294A2;
+    margin-right: 10px;
 }
 
 li {
@@ -51,6 +61,88 @@ h1 {
 
 }
 
-span {
+.left span {
     opacity: 0.7;
 }
+
+/* style for sectionfirst */
+
+.sectionfirst {
+    width: 80%;
+    height: 270px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-image: url("./img/block.png");
+
+}
+
+.sectionfirstp {
+    padding: 10px 50px 50px 50px
+}
+
+.feuterd {
+    opacity: 0.5;
+}
+
+.sectionfirstp p {
+    color: white;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+h2 {
+    font-size: 32px;
+    color: white;
+    margin-top: 10px;
+}
+
+.published {
+    text-align: right;
+}
+
+.yesterday {
+    opacity: 0.5;
+}
+
+
+.newarticle {
+    color: #5E8A93;
+    border-radius: 15px;
+    border: none;
+    background-color:#b5dce4 ;
+    height: 30px;
+}
+
+/* style for section firstbutton */
+
+.Readthearticle {
+    background-color: #6294A2;
+    width: 186px;
+    height: 44px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+    animation-name: ordernow;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    cursor: pointer;
+}
+
+@keyframes ordernow {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+} 
+
+
+/* style for sectionsecond */ 
+
+.sectionsecond {width: 80%;}
