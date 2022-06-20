@@ -1,21 +1,21 @@
 body {
-    font-family: 'Acumin Pro'
+    font-family: 'Acumin Pro';
+    background-color: #FAFAFA;
 }
 
 .container {
-    max-width: 1920px;
-    width: 100%;
-    margin: 0 auto;
+    padding: 0px 100px;
+
 }
 
 /* style for header */
 header {
     display: flex;
-    width: 80%;
+
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 0px 55px 0px;
+    padding: 40px 0px;
 
 }
 
@@ -44,7 +44,7 @@ header {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-color: #6294A2;
+    background: linear-gradient(45deg, #6294A2, #58C3DD);
     margin-right: 10px;
 }
 
@@ -68,30 +68,27 @@ h1 {
 /* style for sectionfirst */
 
 .sectionfirst {
-    width: 80%;
-    height: 270px;
+
+
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0 auto;
     background-image: url("./img/block.png");
-
-}
-
-.sectionfirstp {
     padding: 10px 50px 50px 50px
 }
+
 
 .feuterd {
     opacity: 0.5;
 }
 
-.sectionfirstp p {
+.sectionfirst p {
     color: white;
     margin-top: 20px;
     font-size: 15px;
 }
 
-h2 {
+.exploring {
     font-size: 32px;
     color: white;
     margin-top: 10px;
@@ -110,14 +107,15 @@ h2 {
     color: #5E8A93;
     border-radius: 15px;
     border: none;
-    background-color:#b5dce4 ;
+    background-color: #b5dce4;
     height: 30px;
 }
 
 /* style for section firstbutton */
 
 .Readthearticle {
-    background-color: #6294A2;
+
+    background: linear-gradient(45deg, #6294A2, #58C3DD);
     width: 186px;
     height: 44px;
     border-radius: 15px;
@@ -130,6 +128,7 @@ h2 {
     animation-iteration-count: infinite;
     animation-direction: alternate;
     cursor: pointer;
+
 }
 
 @keyframes ordernow {
@@ -140,9 +139,448 @@ h2 {
     to {
         transform: scale(1.2);
     }
-} 
+}
 
 
-/* style for sectionsecond */ 
+/* style for sectionsecond */
 
-.sectionsecond {width: 80%;}
+.sectionsecond {
+
+    display: flex;
+
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+
+.publication {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 45px 44px 28px 44px;
+    box-shadow: 0px 3px 6px;
+}
+
+.reviwes {
+    display: flex;
+    align-items: center;
+
+}
+
+
+.reviwes p {
+    margin-top: 10px;
+}
+
+.travel {
+    opacity: 0.3;
+    font-size: 13px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.usa-first {
+    background-image: url("./img/bacgorund.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+    margin-bottom: 40px;
+}
+
+
+
+.usa {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.usa-first,
+.usa-second {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 35px 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px;
+    height: 100%;
+}
+
+.publication-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.publication-header h2 {
+    font-size: 25px;
+}
+
+.publication-header a {
+    opacity: 0.3;
+}
+
+.usa-first-text {
+    opacity: 0.65;
+    font-size: 15px;
+    color: white;
+}
+
+
+.usa-first-title {
+    font-size: 24px;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 7px;
+}
+
+.usa-first button {
+    margin-top: 50px;
+    align-self: flex-start;
+    background-color: rgba(0, 0, 0, 0.377);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 30px;
+    cursor: pointer;
+
+
+
+}
+
+
+.usa-second-title {
+    font-size: 26px;
+}
+
+.usa-second-circle {
+    display: flex;
+    align-items: center;
+}
+
+.usa-second-text {
+    opacity: 0.57;
+    margin-top: 27px;
+    margin-bottom: 15px;
+}
+
+.usa-second button {
+    margin-top: 22px;
+    align-self: flex-start;
+    border-radius: 15px;
+    background: linear-gradient(45deg, #6294A2, #58C3DD);
+    padding: 5px 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    animation-name: subscribe;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+@keyframes subscribe {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+}
+
+
+
+/* style for footer */
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 100px;
+    margin-top: 50px;
+    background-color: white;
+
+}
+
+.footer-left {
+    width: 376px;
+}
+
+.footer-left-header {
+    display: flex;
+
+}
+
+.footer-right {
+    display: flex;
+}
+
+.footer-right-nav {
+    margin-right: 150px;
+    margin-left: 50px;
+}
+
+.footer-right li,
+.footer-left {
+    margin-top: 10px;
+}
+
+.footer-right li:first-of-type {
+    margin-top: 0;
+}
+
+
+.footer-left-text {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.facebook,
+.twitter,
+.instagram,
+.youtube {
+    opacity: 0.1;
+}
+
+.facebook:hover {
+    opacity: 1;
+    border: none;
+    border-radius: 7px;
+}
+
+.twitter:hover {
+    opacity: 1;
+    border: none;
+    border-radius: 7px;
+}
+
+.instagram:hover {
+    opacity: 1;
+    border: none;
+    border-radius: 7px;
+}
+
+.youtube:hover {
+    opacity: 1;
+    border: none;
+    border-radius: 7px;
+}
+
+
+/* style for travelblog */
+
+/* style for sctionfirst-travel */
+.sectionfirst-travel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 0;
+}
+
+.sectionfirst-travel h3 {
+    font-size: 20px;
+    opacity: 0.5;
+    color: white;
+
+}
+
+.sectionfirst-travel h2 {
+    font-size: 46px;
+    color: white;
+    padding: 10px 0;
+
+
+}
+
+.sectionfirst-travel p {
+    font-size: 10px;
+    color: white;
+    opacity: 0.5;
+
+
+}
+
+/* style for blog */
+
+.blog {
+    padding: 46px 110px;
+    background-color: white;
+}
+
+.blog h3 {
+    font-size: 32px;
+    color: #404040;
+    margin-bottom: 12px;
+}
+
+.balaxi {
+    margin-top: 4px;
+    margin-bottom: 42px;
+    width: 100%;
+}
+
+.blog-description {
+    margin-bottom: 20px;
+}
+
+.blog-footer {
+    display: flex;
+}
+
+.tipi {
+    width: 114px;
+    height: 114px;
+}
+
+.blog-social {
+    display: flex;
+}
+
+.blog-footer {
+    margin-top: 50px;
+}
+
+.blog-social {
+    margin-bottom: 28px;
+}
+
+.tipis-description {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.tipis-description p:first-child {
+    opacity: 0.4;
+    margin-bottom: 10px;
+}
+
+
+/* style for discover  */
+
+.discover {
+    display: flex;
+    background-color: white;
+}
+
+.discover h2 {
+    font-size: 26px;
+
+
+    margin: 26px 0 26px 0spx;
+
+}
+
+.discover div span {
+    opacity: 0.5;
+}
+
+.discover div h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.discover div p {
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.disocver-news {
+    padding: 30px 44px 18px 50px;
+    border-bottom: 1px solid #ede9e9;
+}
+
+.disocver-news:first-of-type {
+    padding-top: 0;
+}
+
+
+
+/* style for discoversecond */
+
+
+.discover-second {
+
+    margin: 80px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+
+
+}
+
+.discover-second-news {
+    width: 405px;
+}
+
+.discover-img-first {
+    background-image: url("./img/discover\ 1.png");
+    background-size: cover;
+    height: 266px;
+
+
+    background-repeat: no-repeat;
+}
+
+.discover-img-second {
+    background-image: url("./img/discover\ 2.png");
+    background-size: cover;
+    height: 266px;
+
+    background-repeat: no-repeat;
+}
+
+.discover-img-third {
+    background-image: url("./img/discover\ 3\ .png");
+    background-size: cover;
+    height: 266px;
+
+    background-repeat: no-repeat;
+}
+
+.discover-second-p {
+    padding: 97px 50px 4px 50px;
+}
+
+.discover-second-p p {
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.section-second-date {
+    margin-top: 15px;
+    font-size: 13px;
+    opacity: 0.3;
+}
+
+.discover-img-first div {
+
+    padding: 32px 0px 223px 274px;
+}
+
+.discover-img-second div {
+    padding: 32px 0px 223px 274px;
+}
+
+.discover-img-third div {
+    padding: 32px 0px 223px 274px;
+}
+
+.newarticle {
+    border-radius: 15px;
+    background: transparent;
+    background-color: #FCFCFC;
+    color: #6F6F6F;
+    font-weight: bold;
+
+}
+
+.disocver-circle {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}

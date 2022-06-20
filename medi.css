@@ -1,0 +1,118 @@
+@media (max-width: 1024px) {
+    .reviwes {
+        flex-direction: column;
+    }
+
+    .reviwes img {
+        align-self: flex-start;
+    }
+}
+
+
+@media (max-width:480px) {
+
+
+    .sectionsecond {
+        flex-direction: column;
+    }
+
+    .usa {
+        margin-left: 0px;
+        margin-top: 32px;
+    }
+
+    .publication {
+        padding: 24px;
+    }
+
+    .publication-header h2 {
+        font-size: unset;
+        margin-bottom: 12px;
+    }
+
+    .container {
+        padding: 0 24px;
+    }
+
+    .left li {
+        margin-left: 30px;
+    } 
+.right li {margin-left: 30px;}
+    
+
+    .published {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 24px;
+    }
+
+    .footer-right {
+        justify-content: space-between;
+    }
+
+    .footer-right-nav {
+        margin: 0;
+    }
+
+    .footer-left {
+        margin-bottom: 12px;
+    }
+
+
+}
+
+/* media for travelblog */
+
+@media (max-width:1024px) {
+    .blog {
+        padding: 32px 56px;
+    }
+}
+
+@media (max-width:480px) {
+    .blog-footer {
+        flex-direction: column;
+    }
+
+    .tipis-description {
+        margin: 12px 0;
+    }
+
+    .sectionfirst-travel h2 {
+        text-align: center;
+    }
+}
+
+
+
+/* media for discover */
+
+@media (max-width:1024px) {
+    .main-foto {
+        width: 60%;
+    }
+
+    .discover-second {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+    }
+
+}
+
+@media (max-width:480px) {
+    .main-foto {
+        width: unset;
+    } 
+    .discover{flex-direction: column;}
+
+    .discover-second {
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+    }
+
+}
